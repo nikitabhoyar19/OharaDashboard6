@@ -1,0 +1,250 @@
+<!-- @format -->
+
+<html lang="en" class="js-focus-visible" data-js-focus-visible="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohara Dashboard</title>
+    <!-- <link rel="shortcut icon" href="music.ico" type="image/x-icon" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <!-- <div class="alert">
+    <div class="alert alert-danger" role="alert">
+      please open in desktop mode ..mobile version is under development.
+    </div>
+  </div> -->
+  <div id="wrapper">
+    <!-- side bar  -->
+    <div class="leftside">
+      <ul class="nav sidebar">
+        <a href="#" style="text-align: center"><img class="" src="asset/img/logo.svg" alt=""></a>
+        <!-- to join button we have css background -->
+        <button class="btn joincourse_btn">join the course</button>
+        <li class="nav__menuList">
+          <a href="#"><img src="asset/img/logos/dashboard.png" alt=""></a>
+          <span class="">Home</span>
+        </li>
+        <li class="nav__menuList">
+          <a href="#"><img src="asset/img/logos/allcourse.png" alt=""> </a>
+          <span class="nav__menuList__active">Browse</span>
+        </li>
+        <li class="nav__menuList">
+          <a href="#"><img src="asset/img/logos/chat.png" alt=""></a>
+          <span>Liked</span>
+        </li>
+        <li class="nav__menuList">
+          <a href="#"><img src="asset/img/logos/profile.png" alt=""></a>
+          <span>Artist</span>
+        </li>
+
+        <li class="nav__menuList">
+          <a href="#"><img src="asset/img/logos/settings.png" alt=""></a>
+          <span>Settings</span>
+        </li>
+
+        <div class="nav__footer">
+          <img src="asset/img/footer.png">
+          <p>
+            Upgrade to for <br>
+            more resources
+          </p>
+          <button class="nav__btn" style="margin: 0px 0px">Upgrade</button>
+        </div>
+      </ul>
+    </div>
+
+    <!-- main div container -->
+    <div id="content-wrapper">
+      <!-- content header  -->
+      <div class="header">
+        <!-- input search feild -->
+
+        <div class="input-group">
+          <div class="input-group-append">
+            <button class="btn" type="button" style="">
+              <i class="fa fa-search fa-sm" style="font-size: 15px"></i>
+            </button>
+          </div>
+          <input type="text" class="content__input" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        </div>
+      </div>
+
+      <!-- main content  -->
+      <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light" style="
+            justify-content: space-between !important;
+            margin-bottom: 15px;
+          ">
+          <div class="navbar-Album_title">
+            <a class="navbar-brand" href="#">All courses</a>
+          </div>
+
+          <div class="my-2 my-lg-0" id="navbarNav" style="">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link main__navlink main__navlinkactive" href="#">Ongoing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main__navlink main__navlinkdisabled" href="#">Favorite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main__navlink main__navlinkdisabled" href="#">Saved</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="header_course">
+          <div class="course_head">
+            <div class="title">
+              <h3>Ui/Ux Design</h3>
+              <p>20 lessons</p>
+            </div>
+            <p>2h 20min</p>
+          </div>
+        </div>
+        <!-- we want 2 courses here  -->
+        <div class="mutiple_course">
+          <!-- course 1 -->
+          <div class="mutiplecourse-2">
+            <!-- course contain -->
+            <div class="course" style="
+                background-image: url(asset/img/images/photography.png);
+                margin-right: 15px;
+              ">
+              <div class="course_head">
+                <div class="title">
+                  <h3>Photography</h3>
+                  <p>20 lessons</p>
+                </div>
+                <p>2h 20min</p>
+              </div>
+            </div>
+          </div>
+          <!-- course 2 -->
+          <div class="mutiplecourse-2">
+            <!-- course content -->
+            <div class="course" style="
+                background-image: url(asset/img/images/animation.png);
+                margin-left: 10px;
+              ">
+              <div class="course_head">
+                <div class="title">
+                  <h3>Animation</h3>
+                  <p>20 lessons</p>
+                </div>
+                <p>2h 20min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right side bar -->
+
+    <div class="rightside">
+      <ul class="nav sidebar">
+        <!-- PROFILE  -->
+        <div class="profile" style="display: flex; align-items: center">
+          <img src="asset/img/profile/Rectangle 100.png" alt="">
+          <h3 style="text-align: center; flex: 1">Alexa Rogue</h3>
+        </div>
+
+        <!-- PROGRESS CARD -->
+        <div class="course__progress">
+          <h5>Progress</h5>
+          <!-- this is progress item -->
+          <div class="progress__item">
+            <!-- icon  -->
+            <div class="progress__icon">
+              <img src="asset/img/icons/pen.png" alt="">
+            </div>
+            <!-- description -->
+            <div class="course__desc">
+              <p>Ui/Ux design</p>
+              <span>Advance</span>
+            </div>
+          </div>
+          <div class="progress__item">
+            <!-- icon  -->
+            <div class="progress__icon" style="background: #d5f5fb">
+              <img src="asset/img/icons/photo.png" alt="">
+            </div>
+            <!-- description -->
+            <div class="course__desc">
+              <p>Photography</p>
+              <span>Advance</span>
+            </div>
+          </div>
+          <div class="progress__item">
+            <!-- icon  -->
+            <div class="progress__icon" style="background: #ffefd6">
+              <img src="asset/img/icons/animation.png" alt="">
+            </div>
+            <!-- description -->
+            <div class="course__desc">
+              <p>Animation</p>
+              <span>Advance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMMING TASK -->
+        <div class="course__progress" style="margin-top: 20px">
+          <h5>Upcoming Task</h5>
+          <!-- this is progress item -->
+          <div class="progress__item">
+            <!-- icon  -->
+            <div class="progress__icon">
+              <img src="asset/img/icons/uidis.png" alt="">
+            </div>
+            <!-- description -->
+            <div class="course__desc">
+              <p>Ui/Ux - Discussion</p>
+              <span>27 oct 2020, Tuesday </span>
+            </div>
+          </div>
+          <div class="progress__item">
+            <!-- icon  -->
+            <div class="progress__icon" style="background: #ffefd6">
+              <img src="asset/img/icons/animationdis.png" alt="">
+            </div>
+            <!-- description -->
+            <div class="course__desc">
+              <p>Animation - 3D Animation</p>
+              <span> 27 oct 2020, Tuesday y</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="nav__footer"></div>
+      </ul>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+<loom-container id="lo-engage-ext-container"><div></div>
+  <loom-shadow classname="resolved"></loom-shadow></loom-container>
+
+</body></html>
